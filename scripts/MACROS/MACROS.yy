@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"MACROS",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MACROS",
+  "parent":{
+    "name":"Test1",
+    "path":"Test1.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
