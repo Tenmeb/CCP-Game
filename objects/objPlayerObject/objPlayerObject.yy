@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprSouthEast",
-    "path":"sprites/sprSouthEast/sprSouthEast.yy",
+    "name":"sprSouth",
+    "path":"sprites/sprSouth/sprSouth.yy",
   },
   "spriteMaskId":{
     "name":"sprCollisionMask",
