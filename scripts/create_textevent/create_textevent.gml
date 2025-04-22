@@ -14,7 +14,7 @@ function create_textevent() {
 	if(instance_exists(obj_textevent)){ exit; }
 
 	var arg_count = argument_count;
-	var i = 0, var arg; repeat(arg_count){
+	var i = 0, var arg = 0; repeat(arg_count){
 		arg[i] = argument[i];
 		i++;
 	}
