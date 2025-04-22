@@ -68,11 +68,11 @@ updateSprite = function(_dir){
 	xScale = 1;
 	switch(round_n(_dir, 45) % 360) {
 	  case WEST: sprite_index = sprWest; break; 
-	  case SOUTH_WEST: sprite_index = sprSouth; break;
-	  case NORTH_WEST: sprite_index = sprNorth; break;
+	  case SOUTH_WEST: sprite_index = sprWest; break;
+	  case NORTH_WEST: sprite_index = sprWest; break;
 	  case EAST: sprite_index = sprEast; break; 
-	  case SOUTH_EAST: sprite_index = sprSouth; break;
-	  case NORTH_EAST: sprite_index = sprNorth; break;
+	  case SOUTH_EAST: sprite_index = sprEast; break;
+	  case NORTH_EAST: sprite_index = sprEast; break;
 	  case NORTH: sprite_index = sprNorth; break;
 	  case SOUTH: sprite_index = sprSouth; break;
 	}

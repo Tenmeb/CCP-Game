@@ -1,0 +1,1 @@
+audio_play_sound(ccp_music6,1000,true);

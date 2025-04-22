@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":0.13931973,
   "name":"snd_voice1",
   "parent":{
     "name":"FC_DialogueSystem",
