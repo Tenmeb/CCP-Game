@@ -26,6 +26,7 @@
     {"name":"objWallTL","order":4,"path":"objects/objWallTL/objWallTL.yy",},
     {"name":"objWallTR","order":5,"path":"objects/objWallTR/objWallTR.yy",},
     {"name":"par_speaker","order":2,"path":"objects/par_speaker/par_speaker.yy",},
+    {"name":"menu","order":9,"path":"rooms/menu/menu.yy",},
     {"name":"rmTileDemo","order":6,"path":"rooms/rmTileDemo/rmTileDemo.yy",},
     {"name":"approach","order":1,"path":"scripts/approach/approach.yy",},
     {"name":"camera_set_view_pos_subpixel","order":3,"path":"scripts/camera_set_view_pos_subpixel/camera_set_view_pos_subpixel.yy",},

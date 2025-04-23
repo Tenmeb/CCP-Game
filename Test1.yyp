@@ -53,6 +53,7 @@
     {"id":{"name":"objWallTL","path":"objects/objWallTL/objWallTL.yy",},},
     {"id":{"name":"objWallTR","path":"objects/objWallTR/objWallTR.yy",},},
     {"id":{"name":"par_speaker","path":"objects/par_speaker/par_speaker.yy",},},
+    {"id":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"id":{"name":"rmTileDemo","path":"rooms/rmTileDemo/rmTileDemo.yy",},},
     {"id":{"name":"approach","path":"scripts/approach/approach.yy",},},
     {"id":{"name":"camera_set_view_pos_subpixel","path":"scripts/camera_set_view_pos_subpixel/camera_set_view_pos_subpixel.yy",},},
@@ -114,6 +115,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rmTileDemo","path":"rooms/rmTileDemo/rmTileDemo.yy",},},
+    {"roomId":{"name":"menu","path":"rooms/menu/menu.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
