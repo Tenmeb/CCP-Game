@@ -13,12 +13,21 @@ move = use_tdmc(_tileMeeting)
 
 //--------Dialogue Stuff
 reset_dialogue_defaults();
-myPortrait			= spr_portrait_player;
+myPortrait			= -1;
 myVoice				= snd_voice2;
 myFont				= fnt_dialogue;
 myName				= "You";
 
-myPortraitTalk		= spr_portrait_examplechar_mouth;
-myPortraitTalk_x	= 26;
-myPortraitTalk_y	= 44;
-myPortraitIdle		= spr_portrait_examplechar_idle;
+myPortraitTalk		= -1;
+myPortraitTalk_x	= -1;
+myPortraitTalk_y	= -1;
+myPortraitIdle		= -1;
+
+// Status variables
+reputation = 50;
+reputation_max = 100;
+energy = 100;
+energy_max = 100;
+money = 0;
+
+// Rest of player initialization

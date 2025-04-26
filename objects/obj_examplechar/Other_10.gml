@@ -112,3 +112,121 @@ switch(choice_variable){
 	#endregion
 	break;
 }
+
+//---Kitchen Dialogue Logic---//
+
+// Assume kitchen_dialogue_state is set before this script runs by the interaction trigger
+switch(kitchen_dialogue_state) {
+    case "start":
+    #region Start - Entering Kitchen
+        var i = 0;
+        // Line 0: Student A intro
+        myText[i]       = "This is the basement kitchen, the communal kitchen only for Minervans.";
+        mySpeaker[i]    = obj_studentA; // Use actual object name
+
+        // Line 1: Student A
+        i++;
+        myText[i]       = "There are stoves, fridges, and pantry.";
+        mySpeaker[i]    = obj_studentA;
+
+        // Line 2: Student A
+        i++;
+        myText[i]       = "Cookers like pans are available, you are free to use them if there is no name.";
+        mySpeaker[i]    = obj_studentA;
+
+        // Line 3: Student A
+        i++;
+        myText[i]       = "Basically, you have everything you needed here for cooking.";
+        mySpeaker[i]    = obj_studentA;
+
+        // Line 4: Student A
+        i++;
+        myText[i]       = "Enjoying your cooking!";
+        mySpeaker[i]    = obj_studentA;
+
+        // ...existing code...
+    #endregion
+    break;
+
+    // ...existing code...
+
+    case "wash_later":
+    #region Choice 1-2: Wash Later - Narration & Student B Arrives
+        // ...existing code...
+        // Line 3: Student B
+        i++;
+        myText[i]       = "Who used my pot?!";
+        mySpeaker[i]    = obj_studentB; // Use actual object name
+
+        // Line 4: Student B
+        i++;
+        myText[i]       = "Was it you?";
+        mySpeaker[i]    = obj_studentB;
+        myNextLine[i]   = "ask_confess_choice"; // Jump to confess/deny choice
+    #endregion
+    break;
+
+    // ...existing code...
+
+    case "confess":
+    #region Choice 1-2-1: Confess
+        // ...existing code...
+        // Line 1: Student B
+        i++;
+        myText[i]       = "*The student crosses his arms, visibly annoyed.* Next time, ask first. There are people using others' pots and leaving them dirty, so I couldn't fully trust you.";
+        mySpeaker[i]    = obj_studentB;
+
+        // ...existing code...
+    #endregion
+    break;
+
+    case "deny":
+    #region Choice 1-2-2: Deny
+        // ...existing code...
+        // Line 1: Student B
+        i++;
+        myText[i]       = "*Student B narrows his eyes.* Really? No one else has been in here.";
+        mySpeaker[i]    = obj_studentB;
+
+        // ...existing code...
+        // Line 3: Student A
+        i++;
+        myText[i]       = "Hey! Did you end up cooking? I forgot to mention—ensure you have the permission of owners if you want to use named cookers, because I just remember that a lot of unnamed cookers are missing.";
+        mySpeaker[i]    = obj_studentA;
+
+        // Line 4: Student B
+        i++;
+        myText[i]       = "*Student B shifts his attention back to you.* Then which pot did you use?";
+        mySpeaker[i]    = obj_studentB;
+
+        // ...existing code...
+        // Line 6: Student B & Consequence
+        i++;
+        myText[i]       = "You're lying. *He walks to the sink, points at the pot, and shakes his head in disappointment.*";
+        mySpeaker[i]    = obj_studentB;
+         // ...existing code...
+    #endregion
+    break;
+
+    // ...existing code...
+
+    case "wait_success":
+    #region Choice 2 Outcome: Success after waiting
+        // ...existing code...
+        // Line 2: Student B
+        i++;
+        myText[i]       = "You must be new to here! Looking for a pot? You can use mine!";
+        mySpeaker[i]    = obj_studentB;
+
+        // ...existing code...
+        // Line 4: Student B
+        i++;
+        myText[i]       = "Wanna cook together? I’ve got extra mushrooms.";
+        mySpeaker[i]    = obj_studentB;
+
+        // ...existing code...
+    #endregion
+    break;
+
+    // ...existing code...
+}
